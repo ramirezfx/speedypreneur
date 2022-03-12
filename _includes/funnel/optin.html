@@ -1,0 +1,209 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>{{ page.title }}</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <meta name="robots" content="noindex">
+
+  <!-- Favicons -->
+  <link href="/assets2/img/{{ page.favicon }}" rel="icon">
+  <link href="/assets2/img/{{ page.apple-favicon }}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/assets2/vendor/aos/aos.css" rel="stylesheet">
+  <!--<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link href="/assets2/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/assets2/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/assets2/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/assets2/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/assets2/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Reveal - v4.7.0
+  * Template URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+{% if page.htmlbeforeheadend %}
+  {% include {{ page.htmlbeforeheadend }} %}
+{% endif %}
+
+</head>
+
+<body>
+<!-- ======= Header ======= -->
+<header id="header" class="d-flex align-items-center">
+  <div class="container d-flex justify-content-between">
+
+    <div id="logo">
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="/"><img src="{{ site.imglogo }}" alt=""></a>
+    </div>
+
+  </div>
+</header><!-- End Header -->
+<main id="main">
+
+  <!-- ======= HEADLINE ======= -->
+  <section id="headline">
+    <div class="container text-center">
+      <div class="section-header">
+        <h1><strong>{{ page.headline }}</strong></h1>
+        <p><span style="color: #d9534f;"><strong>{{ page.subheadline }}</strong></span></p>
+      </div>
+    </div>
+  </section>
+  <!-- END HEADLINE -->
+
+
+  <!-- ======= About Section ======= -->
+  <section id="about">
+    <div style="padding-top: 0px" class="container">
+      <div class="row">
+        <div class="col-lg-6 about-img">
+          <img src="/assets2/img/{{ page.featimage }}" alt="">
+        </div>
+
+        <div class="col-lg-6 content text-left">
+          <h2>{{ page.feat_headline }}</h2>
+          <h3>{{ page.feat_subheadline }}</h3>
+
+          <ul>
+            <li><i class="text-left bi bi-check-circle"></i>  <span style="color: #d9534f;"><strong>{{ page.FeaturesHeadline1 }}</strong></span>{{ page.FeaturesSubHeadline1 }}</li>
+            <li><i class="text-left bi bi-check-circle"></i>  <span style="color: #d9534f;"><strong>{{ page.FeaturesHeadline2 }}</strong></span>{{ page.FeaturesSubHeadline2 }}</li>
+            <li><i class="text-left bi bi-check-circle"></i>  <span style="color: #d9534f;"><strong>{{ page.FeaturesHeadline3 }}</strong></span>{{ page.FeaturesSubHeadline3 }}</li>
+            <li><i class="text-left bi bi-check-circle"></i>  <span style="color: #d9534f;"><strong>{{ page.FeaturesHeadline4 }}</strong></span>{{ page.FeaturesSubHeadline4 }}</li>
+          </ul>
+
+          <div style="text-align:center; padding-bottom: 30px">
+
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#optin" style="border-radius: 8px; background-color: #d9534f; color: white; border: none; text-align: center; text-decoration: none; display: inline-block; width: 100%; padding: 15px; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);">
+                  <b>{{ page.ButtonText }}</b>
+              </button>
+              <!-- <button type="button" data-toggle="modal" style="border-radius: 8px; background-color: #f44336; color: white; border: none; text-align: center; text-decoration: none; display: inline-block; width: 100%; padding: 15px; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);">
+              <b><a href="#optin">Damn, Gimme The Course ... Now !</a></b>
+              </button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End About Section -->
+
+      <!-- ======= Testimonials Section ======= -->
+  <section id="testimonials">
+    <div class="container" data-aos="fade-up">
+      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <img src="/assets2/img/quote-sign-left.png" class="quote-sign-left" alt="">
+                {{ page.TestimonialText1 }}
+                <img src="/assets2/img/quote-sign-right.png" class="quote-sign-right" alt="">
+              </p>
+              <h3>{{ page.TestimonialAuthor1 }}</h3>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <img src="/assets2/img/quote-sign-left.png" class="quote-sign-left" alt="">
+                {{ page.TestimonialText2 }}
+                <img src="/assets2/img/quote-sign-right.png" class="quote-sign-right" alt="">
+              </p>
+              <h3>{{ page.TestimonialAuthor2 }}</h3>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <img src="/assets2/img/quote-sign-left.png" class="quote-sign-left" alt="">
+                {{ page.TestimonialText3 }}
+                <img src="/assets2/img/quote-sign-right.png" class="quote-sign-right" alt="">
+              </p>
+              <h3>{{ page.TestimonialAuthor3 }}</h3>
+            </div>
+          </div><!-- End testimonial item -->
+
+</main><!-- End #main -->
+
+{{ content }}
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+  <div class="container">
+    <p style="text-align: center;"><a href="/tos"><span style="color: #333333;">Terms Of Service</span></a> | <span style="color: #333333;"><a style="color: #333333;" href="/privacy">Privacy Policy</a></span> | <span style="color: #333333;"><a style="color: #333333;" href="/disclaimer">Disclaimer</a></span> | <a href="/contact"><span style="color: #333333;">Contact Us</span></a> | <a href="/about"><span style="color: #333333;">About Us</span></a></p>
+    <div class="copyright">
+      &copy; Copyright <strong>Speedypreneur</strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!--
+      All the links in the footer should remain intact.
+      You can delete the links only if you purchased the pro version.
+      Licensing information: https://bootstrapmade.com/license/
+      Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Reveal
+    -->
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </div>
+</footer><!-- End Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+<!-- Vendor JS Files -->
+<script src="/assets2/vendor/aos/aos.js"></script>
+<!--<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>-->
+<script src="/assets2/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="/assets2/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="/assets2/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="/assets2/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="/assets2/js/main.js"></script>
+<!-- Modal -->
+ <section>
+   <div class="modal fade" id="optin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog" role="document" style="max-width: 400px;max-height: 500px">
+           <div class="modal-content">
+               <div class="modal-header">
+                   <h5 class="modal-title" id="optin">Subscribe To Our Newsletter</h5>
+                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span>
+                   </button>
+               </div>
+               <div class="modal-body" style="text-align:center">
+                   <img src="/assets2/img/email-send.png">
+                   <h5><b>Where Should We Send The Free Video-Training ?</b></h5>
+                   <p>Enter Your First Name And Best Email Address In The Fields Below</p>
+                   {% include autoresponder-forms/{{ page.autoresponderform }} %}
+               </div>
+           </div>
+       </div>
+   </div>
+ </section>
+
+ {% if page.htmlbeforebodyend %}
+   {% include {{ page.htmlbeforebodyend }} %}
+ {% endif %}
+
+ </body>
+
+</html>

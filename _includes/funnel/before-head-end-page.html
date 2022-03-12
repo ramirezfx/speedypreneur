@@ -1,0 +1,49 @@
+{% if site.google_analytics %}
+    <!-- Global site tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+    <!-- Page analysis (analytics.js) -->
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+{% endif %}
+
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "5c276486-b640-4970-a24a-476b85c97e6e",
+      safari_web_id: "web.onesignal.auto.02091d44-51df-4a38-967b-45e7d1e7feaf",
+      notifyButton: {
+        enable: true,
+      },
+      welcomeNotification: {
+        title: "Welcome On Board - Free Gift For You",
+        message: "As A Welcome Gift, Download Our Freebie '100 Side-Hustles To Earn Thousands Per Month-Click HERE For Access'",
+        url: "https://speedypreneur.com/neobux-freebie-access/",
+      },
+
+      promptOptions: {
+            slidedown: {
+              prompts: [
+                {
+                  type: "push", // current types are "push" & "category"
+                  autoPrompt: true,
+                  text: {
+                    /* limited to 90 characters */
+                    actionMessage: "We'd like to provide you with the latest underground-techniques to earn money online.",
+                    /* acceptButton limited to 15 characters */
+                    acceptButton: "Sure - NOW",
+                    /* cancelButton limited to 15 characters */
+                    cancelButton: "Maybe later"
+                  },
+                  delay: {
+                    pageViews: 1,
+                    timeDelay: 20
+                  }
+                }
+              ]
+            }
+          }
+
+    });
+  });
+</script>
