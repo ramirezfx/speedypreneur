@@ -1,4 +1,4 @@
-<script>
+
     function getRandomInt(max) {
         return Math.floor(Math.random() * max);
     }
@@ -9,4 +9,3 @@
     len=4;
     rnd=getRandomInt(len);
     document.writeln(eval("ad"+rnd));
-</script>
