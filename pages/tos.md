@@ -2,11 +2,13 @@
 layout: page
 title: Terms Of Service
 permalink: /tos/
-gallery_path:
-tags: [Page]
+gallery_path: null
+tags:
+  - Page
 hide: true
 htmlbeforebodyend: default/before-body-end-page.html
 htmlbeforeheadend: default/before-head-end-page.html
+published: true
 ---
 <h2><strong>Terms and Conditions</strong></h2>
 
