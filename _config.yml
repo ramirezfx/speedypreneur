@@ -1,7 +1,7 @@
 # SITE CONFIGURATION
 baseurl: "/"
 url: "https://speedypreneur.com"
-imglogo: /assets/img/SPEEDYPRENEUR.webp
+imglogo: https://postimg.cc/ftCjTv17
 
 # THEME-SPECIFIC CONFIGURATION
 title: Speedypreneur                                    # site's title
